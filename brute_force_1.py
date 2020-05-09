@@ -5,7 +5,7 @@ import requests
 
 HOST = "127.0.0.1"
 URL = f"http://{HOST}/vulnerabilities/brute/?"
-PARALLEL_MODE = False  # rather faster:  12c against 73c
+PARALLEL_MODE = False  # rather faster:  12 c against 73 c
 FILE_NAME = "files/10-million-password-list-top-10000"
 PHPSESSID = "1m5puhnra2lui353bvo0ot8s51"
 LOGINS = ("admin", "pablo", "1337", "smithy", "gordonb")
