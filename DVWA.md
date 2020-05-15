@@ -238,6 +238,20 @@ output
 
 ### Weak Session IDs
 
+dvwaSession starts from 1. Each time the button is clicked session grows on one. dvwaSession connects with PHPSESSID.
+
+output before the first click
+
+![alt text](images/photo_15.png)
+
+output after the first click
+
+![alt text](images/photo_16.png)
+
+output after the second one
+
+![alt text](images/photo_17.png)
+
 ### DOM Based Cross Site Scripting (XSS)
 
 ### Reflected Cross Site Scripting (XSS)
