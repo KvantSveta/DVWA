@@ -302,6 +302,20 @@ input
 
 ### Content Security Policy (CSP) Bypass
 
+input
+
+```js
+alert(document.cookie);
+```
+
+![alt text](images/photo_24.png)
+
+![alt text](images/photo_25.png)
+
+output
+
+![alt text](images/photo_26.png)
+
 ### JavaScript Attacks
 
 ---
