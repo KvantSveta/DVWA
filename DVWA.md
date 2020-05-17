@@ -318,6 +318,16 @@ output
 
 ### JavaScript Attacks
 
+input
+
+![alt text](images/photo_27.png)
+
+![alt text](images/photo_28.png)
+
+output
+
+![alt text](images/photo_29.png)
+
 ---
 
 ## Medium
